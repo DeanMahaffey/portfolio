@@ -1,19 +1,46 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Jaldi', sans-serif;
+    margin: 0;
+}
+
+/* Turns this element into a flexbox */
+main {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+}
+
+.dean {
+    color: yellow;
+    font-family: 'Jaldi', sans-serif;
+    
+}
+
 .photo {
     border-radius: 50%;
 }
 
+/* Defines how to distribute the empty space between child elements and adding style */
 .header {
+    display: flex;
     background: black;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     height: 50px;
+    font-family: 'Jaldi', sans-serif;
+    justify-content: space-between;
+    padding: 60px;
 }
 
 
-.name {
-    float: left;
-}
-
+/*flex in the header*/
 nav {
     display: flex;
     flex-direction: row;
@@ -22,11 +49,90 @@ nav {
 
 }
 
+/*syles the links in the header*/
 a {
-    padding-left: 5px;
-    font-size: 20px;
+    padding-left: 10px;
+    font-size: 30px;
     align-items: center;
     padding-top: 10px;
     text-decoration: none;
-    
+    color: white;   
 }
+
+#aboutme {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.projectmain {
+    /* With a flex-grow value of 2, this element grows twice as wide as others */
+    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
+    flex: 2 1 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.projectimage {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+/*projects will split into two colums at 993px or smaller*/
+@media screen and (max-width: 993px) {
+    .projectimage {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .projectmain {
+        width: 50%;
+    }
+}
+
+@media screen (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+    }
+}
+
+/*projectsmain will strink at 768px or smaller*/
+@media screen and (max-width: 768px) {
+    .projectmain {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectimage {
+        width: 100%;
+    }
+}
+
