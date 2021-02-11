@@ -11,54 +11,66 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Kelly Dean Mahaffey</title>
 </head>
+
+
 <body>
-    <header class="header">
-        <h1 class="name">Kelly <span class="dean">Dean</span> Mahaffey</h1>
 
-        <nav>
-            <a href="#aboutme">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contactme">Contact Me</a>  
-        </nav>
-
+    <!--Makes the name Dean appear in differt font-->
+    <header>
+        <h1>Kelly <span class="dean">Dean</span> Mahaffey</h1>
     </header>
 
+        <!--makes the links at the top of the page-->
+        <nav id="navlinks">
+            <a href="#aboutme">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contactme">Contact Me</a>
+            <a href="#res">Resume</a>  
+        </nav>
+
     <main>
-        <img class="photo" src="./assets/images/kellydean.JPG" alt="Kelly Dean Mahaffey">
 
-        <section id="aboutme">
-            <div>
-            <h2>About Me</h2>
-            </div>
-            <p>Kelly Dean Mahaffey is learning to become a full-stack website developer.</p>
-        </section>
+        <!--main photo and about me section-->
+        <div class="photoabout">
+             <aside id="firstaside">
+                 <img class="photo" src="./assets/images/kellydean.JPG" alt="Kelly Dean Mahaffey">
+             </aside>
 
-        <aside id="work">
-            <h2>Work</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus asperiores at quo dolores, ducimus iste corporis inventore odit, vero sequi nulla possimus magni? Labore atque iure itaque voluptatibus delectus.</p>
-        </aside>
+             <article id="aboutme">
+                 <h2>About Me</h2>
+                    <p>Kelly Dean Mahaffey is learning to become a full-stack website developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus provident harum rerum laboriosam mollitia aut velit fuga! Eligendi saepe distinctio corrupti dicta magnam obcaecati dolor enim similique, nulla veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium perspiciatis deleniti incidunt iure adipisci impedit dolorem, odio totam assumenda eius enim, quisquam ad error similique nesciunt, non cupiditate libero. </p>
+             </article>
 
-        <div class="projects">
-             <img class="projectmain" src="https://via.placeholder.com/350x150" alt="image placeholder">
-             <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
-             <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
-             <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
         </div>
 
-        <div id="contactme">
+        <div>
+            <!--work section with images of projects but right they have a place holder-->
+             <aside id="work">
+                 <h2>Work</h2>
+             </aside>
+
+             <article>
+                 <div>
+                     <img class="projectmain" src="https://via.placeholder.com/350x150" alt="image placeholder">
+                     <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
+                     <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
+                     <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
+                 </div>
+                </article>  
+
+        </div>
+        <!--contact me section with links???-->
+        <aside id="contactme">
             <h2>Contact Me</h2>
-            <ul>
-                <li>Email</li>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-            </ul>
-        </div>
-
-
-    </main>
-    
+            <nav>
+                <a>Email</a>
+                <a>GitHub</a>
+                <a>LinkedIn</a>
+                <a>Resume</a>
+            </nav>
+        </aside>
+ </main>
+    <!--footer with icon with links to social media and email.-->
     <footer>
         <a class="email" href="mailto:kelly.mahaffey@icloud.com" ><i class="fas fa-envelope-square"></i></a>
         <a class="github" href="https://github.com/DeanMahaffey" target="_blank"><i class="fab fa-github-square"></i></a>
