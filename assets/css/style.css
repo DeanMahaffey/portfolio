@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /*changes all the font to Jaldi and background black with white text*/
 body {
     font-family: 'Jaldi', sans-serif;
@@ -73,16 +77,67 @@ p{
     margin: 20px;
 }
 
-#work > a {
-    flex: 0 0 15%;
+/*puts a border around the project images*/
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    flex-wrap: wrap;
 }
 
-/*puts a border around the project images*/
-.projects a {
-    display: inline-flex;
-    border: solid 5px white;
-    margin: 20px;
+article {
+    display: flex;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
 
+.card-one {
+    flex: 2 1 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.card-one header {
+    padding: 20px;
+    background: gray;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.card-one p {
+    font-size: small;
+}
+
+.card-one img {
+    width: 100%;
+    min-width: 200px;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+.card header {
+    padding: 20px;
+    background: gray;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.card p {
+    font-size: small;
+}
+
+.card img {
+    width: 100%;
+    min-width: 200px;
 }
 
 /*makes the logo white and bigger*/
@@ -156,6 +211,37 @@ h3 {
 #line {
     color: yellow;
 }
+
+/* h1 header will be at 75px at 993px or smaller*/
+@media screen and (max-width: 993px) {
+    header {
+        font-size: 75px;
+    }
+}
+
+/*contact font will be large at 993px or smaller*/
+@media screen and (max-width: 993px) {
+    #contact,
+    #resume {
+        font-size: large;
+    }
+}
+
+/*h1 header will be at 60px at 768px or smaller*/
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 60px;
+    }
+}
+
+/*conatct font will be medium at 768px or smaller*/
+@media screen and (max-width: 768px) {
+    #contact,
+    #resume {
+        font-size: medium;
+    }
+}
+
 
 
 
