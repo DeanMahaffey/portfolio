@@ -7,14 +7,14 @@ body {
 
 /*centers the header and makes a yellow underline*/
 header {
-    font-size: 50px;
+    font-size: 100px;
     color: white;
     text-align: center;
     text-decoration: underline yellow;
 }
 
 /*makes the name dean orange with italics*/
-.dean {
+#dean {
     font-style: italic;
     color: rgb(235, 156, 10);
 }
@@ -43,4 +43,121 @@ h2 {
     color: yellow;
     font-style: italic;
     text-decoration: underline orange;
+    margin: 20px 0;
 }
+
+/*font size for about me section*/
+p{
+    font-size: 25px;
+}
+
+/*margins and padding for about me*/
+#aboutme {
+    padding: 10px;
+    margin: auto;
+}
+
+/*flex for the image and about me section*/
+.photoabout {
+    display: flex;
+}
+
+#firstaside > #aboutme {
+    flex: 0 0 15%;
+}
+
+
+#work {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+
+#work > a {
+    flex: 0 0 15%;
+}
+
+/*puts a border around the project images*/
+.projects a {
+    display: inline-flex;
+    border: solid 5px white;
+    margin: 20px;
+
+}
+
+/*makes the logo white and bigger*/
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    padding: 30px; 
+    text-align: center;  
+    display: inline-block;
+    justify-content: right; 
+}
+
+/*makes the footer stand out from the rest of the website*/
+footer {
+    background: gray;
+    display: flex;
+    justify-content: right;
+}
+ 
+/*the heading in the footer*/
+h3 {
+    font-size: 20px;
+    color: yellow;
+    font-style: italic;
+    text-decoration: underline orange;
+    margin: 20px 0;
+    padding: 20px;
+    justify-content: center;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+
+}
+
+/*back to top hyper link*/
+.top {
+    font-size: 15px;
+    background: lightgrey;
+    font-style: italic;
+    color: black;
+}
+
+/*inline the contact section*/
+.contact {
+    padding: 20px;
+    text-align: right;
+    display: inline-block;
+    margin: 20px;
+}
+
+#contact {
+    padding: 20px;
+    display: inline-block;    
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+
+}
+
+/*resume link in contact me section*/
+#resume {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+/*makes the line between the contacts yellow*/
+#line {
+    color: yellow;
+}
+
+
+
+
+

@@ -16,16 +16,16 @@
 <body>
 
     <!--Makes the name Dean appear in differt font-->
-    <header>
-        <h1>Kelly <span class="dean">Dean</span> Mahaffey</h1>
+    <header id="backtotop">
+        <h1>Kelly <span id="dean">Dean</span> Mahaffey</h1>
     </header>
 
         <!--makes the links at the top of the page-->
         <nav id="navlinks">
-            <a href="#aboutme">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contactme">Contact Me</a>
-            <a href="#res">Resume</a>  
+            <a href="#aboutme">| About Me |</a>
+            <a href="#work">Work |</a>
+            <a href="#contact">Contact Me |</a>
+            <a href="#resume">Resume |</a>  
         </nav>
 
     <main>
@@ -45,36 +45,46 @@
 
         <div>
             <!--work section with images of projects but right they have a place holder-->
-             <aside id="work">
-                 <h2>Work</h2>
+             <aside>
+                 <h2 id="work">Work</h2>
              </aside>
 
-             <article>
-                 <div>
-                     <img class="projectmain" src="https://via.placeholder.com/350x150" alt="image placeholder">
-                     <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
-                     <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
-                     <img class="projectimage" src="https://via.placeholder.com/150" alt="image placeholder">
-                 </div>
-                </article>  
+             <article class="projects">
 
+                <!--place holders for my projects that are links that open in another tab-->
+                
+                 <a href="https://github.com/DeanMahaffey/HM-1-code_refactor" target="_blank"><img class="projectmain"  src="https://via.placeholder.com/350x350" alt="image placeholder"></a>
+                     
+                <a href="https://github.com/DeanMahaffey/prework-about-me" target="_blank"><img class="projectimage" src="https://via.placeholder.com/250" alt="image placeholder"></a>
+
+                <a href="https://github.com/DeanMahaffey/class-1-2" target="_blank"><img class="projectimage" src="https://via.placeholder.com/250" alt="image placeholder"></a>
+
+                <a href="https://github.com/DeanMahaffey/portfolio" target="_blank"><img class="projectimage" src="https://via.placeholder.com/250" alt="image placeholder"></a>
+
+                
+            </article>
         </div>
+        
         <!--contact me section with links???-->
-        <aside id="contactme">
-            <h2>Contact Me</h2>
-            <nav>
-                <a>Email</a>
-                <a>GitHub</a>
-                <a>LinkedIn</a>
-                <a>Resume</a>
-            </nav>
-        </aside>
+        <h2 class="contact">Contact Me</h2>
+            
+            <a id="contact" href="mailto:kelly.mahaffey@icloud.com">Email <span id="line">|</span></a>
+            <a id="contact" href="https://github.com/DeanMahaffey" target="_blank">GitHub <span id="line">|</span></a>
+            <a id="contact" href="https://www.linkedin.com/in/dean-mahaffey/" target="_blank">LinkedIn <span id="line">|</span></a>
+            <a id="resume" href="https://drive.google.com/file/d/1J0JF4D01-bU-D425Ny3UV41-XLksBL7N/view?usp=sharing" target="_blank">Resume <span id="line">|</span></a>
+            
+
  </main>
     <!--footer with icon with links to social media and email.-->
     <footer>
+        <h3>Stay Connected</h3>
+
         <a class="email" href="mailto:kelly.mahaffey@icloud.com" ><i class="fas fa-envelope-square"></i></a>
         <a class="github" href="https://github.com/DeanMahaffey" target="_blank"><i class="fab fa-github-square"></i></a>
         <a class="LinkedIn" href="https://www.linkedin.com/in/dean-mahaffey/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        <a class="top" href="#backtotop">Back to Top</a>
+
     </footer>
 </body>
 </html>
